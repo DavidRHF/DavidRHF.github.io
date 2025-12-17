@@ -11,25 +11,20 @@ Prototyping has helped me in almost every assignment I’ve done for this class 
 
 **fdS approach**
 
-
 ![Description of Visualization](ManifestoImages/FigmaGraph5Main.png)
-
 
 For this specific lab, I compared misinformation in AI chat bots. This chart helped me steadily realize what designs I wanted to go with for my graphs. Eventually, we moved onto larger prototypes. While still on paper, they were more complete than the past design sheet.
 
-**Fleshed out prototype**
 
+**Fleshed out prototype**
 
 ![Description of Visualization](ManifestoImages/FigmaGraphLayout.png)
 
-
-
 This is an example of one of the graphs prototypes I envisioned. It shows the separate platforms graphs, the possible buttons involved, and the graph key. After getting a concrete idea of what I wanted this to look like, I used  Tableau to bring it to life.
+
 
 **Completed graph**
 
-
 ![Description of Visualization](ManifestoImages/FigmaFinalDesign.png)
-
 
 This graph shows the combination of all platforms and the number of entries compared to the months it occurred. Overall, this lab took many steps in the prototyping process. Although it seems like a lot, it was necessary to find a direction that works best.
