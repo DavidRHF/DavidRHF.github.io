@@ -1,1 +1,4 @@
-# Test Test
+# Overview
+Within every created website, device, and application, many methods are involved before the end design goal. Design methods are important because they provide a structured and systematic approach to solving problems. By following processes such as research, prototyping, and testing, designers can make proper decisions rather than relying on guesswork. These methods are used to help identify user needs, technical constraints, and potential risks early in the process. This leads to a reduction in costly errors and redesigns later in the process. Design methods rely on collaboration and clear communication so that designers and stakeholders can always be on the same page.
+
+During the User Experience course, we learned many different methods pertaining to the philosophy of design. Over the course of the semester, we redesigned applications, designed our own applications, and visualized data.
