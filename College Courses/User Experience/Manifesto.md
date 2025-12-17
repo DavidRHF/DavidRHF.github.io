@@ -62,3 +62,26 @@ The final design turned out to be more compact. By removing unnecessary parts an
 
 
 ### Contextual Inquiry
+Contextual inquiries are great design methods because they allow designers to observe and understand users in their natural environment while they perform tasks. By combining observation with guided questioning, designers gain important insight into design. Behaviors and constraints that users may not mention in interviews or recall accurately can appear in contextual inquiries. This method also reveals how context such as physical surroundings or time pressures can influence user behavior. This leads to a deeper and more accurate understanding of user needs.
+
+The project where I used contextual inquiries the most was my project on preliminary needs identification. During this project I chose to run a contextual inquiry on an ordering machine in the dining hall. By going through different people’s ordering habits, I was able to see issues with the ordering process. One interesting insight I discovered was that people could only input one item at a time in the machine. Even if someone wanted multiple custom orders, they would have to individually input each item. This caused frustration since it wasted time and got tedious if someone were to order multiple items. 
+
+
+
+### Comparing other designs
+Comparing a design with existing solutions is beneficial because it helps designers recognize best practices and areas for improvement. By analyzing what works and what does not in other designs, designers can make informed decisions. This can lead to avoiding repeating mistakes and find opportunities for innovation. This method ensures that new designs are effective and aligned with user expectations.
+
+When designing and prototyping for the Buzz project, I used this technique frequently. Since so many other websites are already made like this specific application, many of the pages commonly seen could be found online. An example of this is the settings page. Most websites have nearly identical settings pages since they all typically contain the same information.
+
+
+**Profile Settings for the Buzz design**
+
+![Description of Visualization](ManifestoImages/BuzzProfile.png)
+
+
+**Example profile settings**
+
+![Description of Visualization](ManifestoImages/BuzzProfileExample.png)
+
+
+In practice, I took a profile settings page that I found off Google. I took some similarities like profile picture and name, then adding them as features to my site. I kept the same format, such as rounded boxes for information entry.
