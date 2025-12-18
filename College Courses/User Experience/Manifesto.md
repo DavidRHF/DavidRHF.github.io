@@ -85,3 +85,10 @@ When designing and prototyping for the Buzz project, I used this technique frequ
 
 
 In practice, I took a profile settings page that I found off Google. I took some similarities like profile picture and name, then adding them as features to my site. I kept the same format, such as rounded boxes for information entry.
+
+
+
+# Reflection
+Overall, these 5 methods have helped me in many ways throughout my design process. Although true, not every method can be used for the same project. Each type of design and project is unique and therefore requires different techniques. For example, interviews wouldn't have been a good fit for the graph design project. This is because the project involved creating graphs based on previously collected data. Of course, interviews were most likely used to collect the data, but they would not have been a help for the specific stage of the process I was in.
+This means that trade-offs are an important consideration in the design process since it’s rarely possible to optimize all goals at once. Designers need to balance constraints such as usability, performance, and resources. So, improving one aspect often means compromising another. Making trade-offs helps designers prioritize what matters most to users and the project. This then leads to more practical design solutions instead of unrealistic ones.
+
