@@ -18,14 +18,14 @@ Prototyping has helped me in almost every assignment I’ve done for this class 
 For this specific lab, I compared misinformation in AI chat bots. This chart helped me steadily realize what designs I wanted to go with for my graphs. Eventually, we moved onto larger prototypes. While still on paper, they were more complete than the past design sheet.
 
 
-**Fleshed out prototype**
+***Fleshed out prototype***
 
 ![Description of Visualization](ManifestoImages/FigmaGraphLayout.png)
 
 This is an example of one of the graphs prototypes I envisioned. It shows the separate platforms graphs, the possible buttons involved, and the graph key. After getting a concrete idea of what I wanted this to look like, I used  Tableau to bring it to life.
 
 
-**Completed graph**
+***Completed graph***
 
 ![Description of Visualization](ManifestoImages/FigmaFinalDesign.png)
 
@@ -46,14 +46,14 @@ During our Identifying needs project, I decided to interview 2 people about the 
 During our Re-Design project we had to use an existing website or application and attempt to improve some of its pages. For this project, I chose Internet Archive to be re-designed. After being satisfied with my initial prototyping, I decided to have some friends do a think aloud on the prototypes. After seeing some confusion on certain designs, I adjusted my designs on the finished product. An example of a changed design was the Blog Page.
 
 
-**Original Design**
+***Original Design***
 
 ![Description of Visualization](ManifestoImages/InternetArchiveOldBlog.png)
 
 Originally, I was told that there was too much empty space and that the suggestions tab didn’t fit with page design. Taking this into account, I then redesigned the page.
 
 
-**Final Design**
+***Final Design***
 
 ![Description of Visualization](ManifestoImages/InternetArchiveBlog.png)
 
@@ -74,12 +74,12 @@ Comparing a design with existing solutions is beneficial because it helps design
 When designing and prototyping for the Buzz project, I used this technique frequently. Since so many other websites are already made like this specific application, many of the pages commonly seen could be found online. An example of this is the settings page. Most websites have nearly identical settings pages since they all typically contain the same information.
 
 
-**Profile Settings for the Buzz design**
+***Profile Settings for the Buzz design***
 
 ![Description of Visualization](ManifestoImages/BuzzProfile.png)
 
 
-**Example profile settings**
+***Example profile settings***
 
 ![Description of Visualization](ManifestoImages/BuzzProfileExample.png)
 
