@@ -11,7 +11,7 @@ Prototyping is an effective design method because it turns ideas into visible an
 
 Prototyping has helped me in almost every assignment I’ve done for this class since it allows ideas to flow and helps with my visualization. A project that really benefitted from prototyping was our design for understanding project. This project involved finding a dataset and representing that data using charts. Early in the process we used a 5-step method of prototyping called the fdS approach. The 5 steps were idea making, filtering, categorizing, refining, and summarizing/questions. 
 
-#### **fdS approach**
+ *fdS approach*
 
 ![Description of Visualization](ManifestoImages/FigmaGraph5Main.png)
 
