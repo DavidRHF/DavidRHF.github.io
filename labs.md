@@ -13,7 +13,7 @@ Use this key to quickly navigate to each class:
 ## Computer Networks
 Hands-on exercises related to TCP/UDP monitoring, network analysis, and packet capture.
 
-- [TCP Packet Sniffing Lab](docs/net_tcp_sniffing.pdf)  
+- [TCP Packet Sniffing Lab](OperatingSystems/OperatingSystems-AI-AssistedTool.docx)  
 - [UDP Broadcast Monitoring](docs/net_udp_broadcast.pdf)  
 - [Wireshark Analysis Exercises](docs/net_wireshark_exercises.pdf)  
 - [Network Security Case Study](docs/net_security_case_study.pdf)  
