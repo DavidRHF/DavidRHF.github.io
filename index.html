@@ -1,277 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Computer Science & Cybersecurity Portfolio</title>
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>David Hazall-Farrell — CS & Cyber Security</title>
+  <meta name="description" content="Computer Science major pursuing a Cyber Security master's. Projects, labs, and experience." />
+  <link rel="preconnect" href="[cdn.jsdelivr.net](https://cdn.jsdelivr.net)" />
   <style>
     :root {
-      --primary: #0ea5e9;
-      --secondary: #020617;
-      --accent: #22c55e;
-      --bg: #020617;
-      --card: #0f172a;
-      --text: #e5e7eb;
-      --muted: #94a3b8;
+      --bg: #0b0f14;
+      --panel: #0f1520;
+      --accent: #5ac8fa;
+      --text: #e6edf3;
+      --muted: #9fb3c8;
+      --card: #111827;
+      --link: #7dd3fc;
+      --chip: #1f2937;
+      --chip-text: #cfe8ff;
     }
-
-    * {
-      box-sizing: border-box;
-      font-family: system-ui, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      background: rgba(2,6,23,0.95);
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #1e293b;
-      z-index: 10;
-    }
-
-    nav a {
-      margin-left: 1.5rem;
-      color: var(--muted);
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      color: var(--primary);
-    }
-
-    section {
-      max-width: 1200px;
-      margin: auto;
-      padding: 4rem 2rem;
-    }
-
-    h1, h2, h3 {
-      color: white;
-    }
-
-    h2 {
-      margin-bottom: 1rem;
-      font-size: 2rem;
-    }
-
-    .hero {
-      text-align: center;
-      padding-top: 6rem;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-    }
-
-    .hero p {
-      max-width: 700px;
-      margin: 1.5rem auto;
-      color: var(--muted);
-      font-size: 1.1rem;
-    }
-
-    .tags span {
-      display: inline-block;
-      margin: 0.3rem;
-      padding: 0.4rem 0.8rem;
-      border-radius: 999px;
-      background: #020617;
-      border: 1px solid #1e293b;
-      font-size: 0.9rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .card {
-      background: var(--card);
-      border-radius: 14px;
-      padding: 2rem;
-      border: 1px solid #1e293b;
-    }
-
-    .card p {
-      color: var(--muted);
-      margin-top: 0.5rem;
-    }
-
-    .skill-bar {
-      background: #020617;
-      border-radius: 6px;
-      overflow: hidden;
-      margin-top: 0.5rem;
-    }
-
-    .skill-bar div {
-      height: 10px;
-      background: var(--primary);
-    }
-
-    button {
-      background: var(--primary);
-      border: none;
-      padding: 0.7rem 1.2rem;
-      border-radius: 8px;
-      color: white;
-      font-weight: 600;
-      cursor: pointer;
-      margin-top: 1rem;
-    }
-
-    button:hover {
-      background: #0284c7;
-    }
-
-    input, textarea {
-      width: 100%;
-      background: #020617;
-      border: 1px solid #1e293b;
-      color: white;
-      padding: 0.6rem;
-      margin-top: 0.5rem;
-      border-radius: 6px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: var(--muted);
-      border-top: 1px solid #1e293b;
-    }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 32px 20px 60px; }
+    header { padding: 28px 22px; background: linear-gradient(180deg, var(--panel), rgba(15,21,32,0.6)); border: 1px solid #1f2937; border-radius: 16px; }
+    header h1 { margin: 0 0 6px; font-size: 2rem; letter-spacing: 0.2px; }
+    header p { margin: 6px 0 0; color: var(--muted); }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 18px; margin-top: 18px; }
+    @media (min-width: 820px) { .grid { grid-template-columns: 1fr 1fr; } }
+    .card { background: var(--card); border: 1px solid #1f2937; border-radius: 14px; padding: 18px 18px; }
+    .card h3 { margin-top: 0; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .chip { background: var(--chip); color: var(--chip-text); border: 1px solid #263346; padding: 6px 10px; border-radius: 999px; font-size: 0.9rem; }
+    .section { margin-top: 26px; }
+    .muted { color: var(--muted); }
+    /* Markdown content styling */
+    #content h2 { margin-top: 28px; }
+    #content ul { padding-left: 20px; }
+    #content li { margin: 4px 0; }
+    footer { margin-top: 36px; color: var(--muted); font-size: 0.95rem; }
   </style>
 </head>
-
 <body>
-
-<header>
-  <h3>CS | Cybersecurity</h3>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#research">Research</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <h1>Computer Science & Cybersecurity</h1>
-  <p>
-    Computer Science major with a Master's focus in Cybersecurity.
-    Passionate about secure systems, low-level computing, and applied security research.
-  </p>
-
-  <div class="tags">
-    <span>Cyber Defense</span>
-    <span>Secure Systems</span>
-    <span>Network Security</span>
-    <span>Software Engineering</span>
-    <span>CTFs</span>
-    <span>Threat Analysis</span>
-  </div>
-</section>
-
-<section id="about">
-  <h2>About Me</h2>
-  <div class="card">
-    <p>
-      I am a Computer Science student pursuing advanced studies in Cybersecurity.
-      My interests include secure software design, network defense, vulnerability analysis,
-      and cryptographic systems. I enjoy combining theoretical foundations with hands-on labs,
-      CTF challenges, and real-world security tooling.
-    </p>
-  </div>
-</section>
-
-<section id="skills">
-  <h2>Technical Skills</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Programming</h3>
-      <p>Python</p><div class="skill-bar"><div style="width:90%"></div></div>
-      <p>C / C++</p><div class="skill-bar"><div style="width:80%"></div></div>
-      <p>JavaScript</p><div class="skill-bar"><div style="width:70%"></div></div>
+  <div class="wrap">
+    <header>
+      <h1>David Hazall-Farrell</h1>
+      <p>Computer Science B.S. (2026) • Incoming Cyber Security M.S. — Focus on red teaming, systems, and cloud.</p>
+      <div class="chips">
+        <span class="chip">Python</span>
+        <span class="chip">C#</span>
+        <span class="chip">Bash</span>
+        <span class="chip">Ducky Script</span>
+        <span class="chip">SQL</span>
+        <span class="chip">JSON</span>
+        <span class="chip">XML</span>
+        <span class="chip">Wazuh</span>
+        <span class="chip">AWS</span>
+        <span class="chip">IIS</span>
+      </div>
+    </header>
+    <!-- Quick links to repository files -->
+    <div class="grid section">
+      <div class="card">
+        <h3>Labs / Classwork</h3>
+        <p class="muted">Hands-on exercises: TCP/UDP monitoring, Linux web hosting, Wazuh, and more.</p>
+        <p><a href="labs.md">View Labs and Classwork →</a></p>
+      </div>
+      <div class="card">
+        <h3>Projects</h3>
+        <p class="muted">Selected builds, tooling, and write-ups from CS and Cyber Security work.</p>
+        <p><a href="projects.md">Explore Projects →</a></p>
+      </div>
     </div>
-
-    <div class="card">
-      <h3>Cybersecurity</h3>
-      <p>Network Security</p><div class="skill-bar"><div style="width:85%"></div></div>
-      <p>Threat Modeling</p><div class="skill-bar"><div style="width:80%"></div></div>
-      <p>Penetration Testing</p><div class="skill-bar"><div style="width:75%"></div></div>
-    </div>
-
-    <div class="card">
-      <h3>Systems</h3>
-      <p>Linux</p><div class="skill-bar"><div style="width:90%"></div></div>
-      <p>Networking</p><div class="skill-bar"><div style="width:85%"></div></div>
-      <p>Cloud Fundamentals</p><div class="skill-bar"><div style="width:70%"></div></div>
-    </div>
+    <!-- Markdown-rendered main content -->
+    <div id="content" class="section card"></div>
+    <footer>
+      <div>Based in New York • Native English, basic conversational Spanish</div>
+      <div>Achievements: Future Problem Solvers (State 1st), CT Bartending School Graduate</div>
+    </footer>
   </div>
-</section>
-
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Network Intrusion Detection Tool</h3>
-      <p>Python-based IDS using packet inspection and anomaly detection.</p>
-    </div>
-
-    <div class="card">
-      <h3>Secure Web Application</h3>
-      <p>Full-stack app implementing authentication, hashing, and role-based access.</p>
-    </div>
-
-    <div class="card">
-      <h3>CTF Writeups & Exploits</h3>
-      <p>Binary exploitation, web vulnerabilities, and reverse engineering challenges.</p>
-    </div>
-  </div>
-</section>
-
-<section id="research">
-  <h2>Research & Certifications</h2>
-  <div class="card">
-    <p>• Graduate research in secure systems and applied cryptography</p>
-    <p>• Security+ (planned / in progress)</p>
-    <p>• Academic focus on risk assessment and cyber defense strategies</p>
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <div class="card">
-    <label>Name</label>
-    <input placeholder="Your name">
-    <label>Email</label>
-    <input type="email" placeholder="email@example.com">
-    <label>Message</label>
-    <textarea rows="4"></textarea>
-    <button>Send Message</button>
-  </div>
-</section>
-
-<footer>
-  © 2026 · Computer Science & Cybersecurity Portfolio · GitHub Pages
-</footer>
-
+  <!-- Lightweight Markdown parser -->
+  <script src="[cdn.jsdelivr.net](https://cdn.jsdelivr.net/npm/marked/marked.min.js)"></script>
+  <script>
+    // Edit the Markdown below — this is what visitors will see as page content.
+    const markdown = `
+## About
+I’m a Computer Science graduate from St. Bonaventure (’26) with a strong systems and security foundation, now heading into a Cyber Security master’s program. I enjoy red teaming, log analysis, and building reliable services on Linux and AWS.
+---
+## Experience
+- **Amazon, North Haven, CT — Ship Dock / IT** (Jun 2025–Sep 2025)  
+  - Loaded crates for shipments  
+  - Fixed issues concerning tech operations
+- **Internship — St. Bonaventure University, Red Team** (Jan 2026–May 2026)  
+  - Pen testing using Bash Bunny MKII  
+  - Coded in Ducky Script and Bash  
+  - Monitored logs and attacks
+- **Internship — St. Bonaventure University, Re-coder / Building** (Sep 2025–Dec 2025)  
+  - Used JSON, XML, Wazuh, SQL to re-code school systems  
+  - Assisted in completion of the Cyber Security lab room
+- **Hobby Lobby, Olean, NY — Sales Associate** (Oct 2024–Present)  
+  - Assisted customers’ needs  
+  - Cut and measured fabric  
+  - Kept the store organized and presentable
+---
+## Education
+- **St. Bonaventure University — B.S. in Computer Science** (Sep 2022–May 2026)  
+  Relevant experience:  
+  - Database administration with SQL  
+  - Computer hardware and software fundamentals  
+  - Website creation using Linux, HTML, and Apache2  
+  - TCP and UDP monitoring
+- **Trinity College, Oxford University (Oxford, England)** (Jun 2024–Aug 2024)  
+  - International experience and collaboration across diverse backgrounds
+---
+## Skills
+- Python, C#  
+- Bash, Ducky Script  
+- JSON, XML, SQL, Wazuh  
+- IIS Manager, AWS  
+- Organized and task-oriented; communication- and team-focused
+---
+## Next Steps
+- Sharpening red team tooling and write-ups  
+- Deepening cloud security and monitoring (AWS + Wazuh)  
+- Preparing for the Cyber Security master’s program
+---
+For detailed walkthroughs, check out **[Labs/Classwork](labs.md)** and **[Projects](projects.md)**.
+`;
+    // Render Markdown into the page
+    marked.setOptions({ breaks: true });
+    document.getElementById('content').innerHTML = marked.parse(markdown);
+  </script>
 </body>
 </html>
+
+Ensure labs.md and projects.md exist in your repo root (or change the hrefs to the correct paths).
+You can edit the large markdown string in the script block to update the visible content anytime, keeping authoring in Markdown while serving as HTML for GitHub Pages.
+
+
+
+Type a message...
+
