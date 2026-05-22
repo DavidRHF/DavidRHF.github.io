@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Labs & Classwork</title>
+  <meta name="description" content="Computer Science and Cyber Security labs, coursework, and hands-on exercises." />
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --panel: #0f1520;
+      --accent: #5ac8fa;
+      --text: #e6edf3;
+      --muted: #9fb3c8;
+      --card: #111827;
+      --link: #7dd3fc;
+      --border: #1f2937;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    .wrap {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+
+    header {
+      background: linear-gradient(180deg, var(--panel), rgba(15,21,32,0.6));
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 24px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: var(--muted);
+    }
+
+    .content {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    h1, h2, h3 {
+      color: var(--text);
+    }
+
+    h2 {
+      margin-top: 36px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    code {
+      background: #111827;
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 32px 0;
+    }
+
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header>
+      <h1>Labs & Classwork</h1>
+      <p>
+        A collection of coursework, labs, and hands-on exercises from
+        Computer Science and Cyber Security studies.
+      </p>
+    </header>
+
+    <div id="content" class="content"></div>
+
+    <footer>
+      Built with HTML + Markdown rendering for GitHub Pages
+    </footer>
+
+  </div>
+
+  <!-- Markdown Parser -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <script>
+    const markdown = `
+# Labs & Classwork
+
+Welcome! This page contains a collection of my classwork, labs, and hands-on exercises from my Computer Science and Cyber Security courses.
+
+## Key
+Use this key to quickly navigate to each class:
+
+- [Computer Networks](#computer-networks)
+- [Operating Systems](#operating-systems)
+
+---
+
+## Computer Networks
+Hands-on exercises related to TCP/UDP monitoring, network analysis, and packet capture.
+
+- [TCP Packet Sniffing Lab](OperatingSystems/OperatingSystems-AI-AssistedTool.docx)
+- [UDP Broadcast Monitoring](docs/net_udp_broadcast.pdf)
+- [Wireshark Analysis Exercises](docs/net_wireshark_exercises.pdf)
+- [Network Security Case Study](docs/net_security_case_study.pdf)
+
+---
+
+## Operating Systems
+Labs focused on Linux system management, file systems, permissions, and process monitoring.
+
+- [AI Tool Building](OperatingSystems/OperatingSystems-AI-AssistedTool.pdf)
+- [Process Management Lab](docs/os_process_management.pdf)
+- [Bash Scripting Exercises](docs/os_bash_scripting.pdf)
+- [Service Monitoring & Logging](docs/os_service_monitoring.pdf)
+
+---
+`;
+
+    marked.setOptions({
+      breaks: true
+    });
+
+    document.getElementById("content").innerHTML = marked.parse(markdown);
+  </script>
+</body>
+</html>
