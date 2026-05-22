@@ -47,6 +47,37 @@
       line-height: 1.7;
     }
 
+    .topnav {
+      display: flex;
+      gap: 14px;
+    
+      margin-bottom: 20px;
+    }
+    
+    .topnav a {
+      padding: 10px 16px;
+    
+      background: rgba(17, 24, 39, 0.9);
+    
+      border: 1px solid var(--border);
+    
+      border-radius: 12px;
+    
+      color: var(--text);
+    
+      text-decoration: none;
+    
+      transition: 0.2s ease;
+    }
+    
+    .topnav a:hover {
+      background: var(--panel-2);
+    
+      color: white;
+    
+      transform: translateY(-1px);
+    }
+    
     .wrap {
       max-width: 1000px;
       margin: auto;
@@ -180,6 +211,12 @@
 
   <div class="wrap">
 
+    <nav class="topnav">
+      <a href="index.html">Home</a>
+      <a href="labs.html">Labs</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+    
     <div id="content" class="content"></div>
 
     <footer>
