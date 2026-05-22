@@ -23,7 +23,7 @@ Hands-on exercises related to TCP/UDP monitoring, network analysis, and packet c
 ## Operating Systems
 Labs focused on Linux system management, file systems, permissions, and process monitoring.
 
-- [Linux File Permissions Lab](docs/os_permissions.pdf)  
+- [Linux File Permissions Lab](OperatingSystems/OperatingSystems-AI-AssistedTool.pdf)  
 - [Process Management Lab](docs/os_process_management.pdf)  
 - [Bash Scripting Exercises](docs/os_bash_scripting.pdf)  
 - [Service Monitoring & Logging](docs/os_service_monitoring.pdf)  
