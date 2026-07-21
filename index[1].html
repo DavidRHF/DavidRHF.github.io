@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>David Hazall-Farrell — Cybersecurity Analyst | Penetration Testing &amp; Security Operations</title>
+<meta name="description" content="David Hazall-Farrell is a Computer Science B.S. graduate and incoming Cybersecurity M.S. student specializing in penetration testing, red team operations, Wazuh SIEM log monitoring, network traffic analysis, Linux administration, and AWS cloud security.">
+<meta name="author" content="David Hazall-Farrell">
+<link rel="canonical" href="https://davidrhf.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="David Hazall-Farrell — Cybersecurity Analyst">
+<meta property="og:description" content="Penetration testing, SIEM monitoring, Linux and AWS. Projects, labs, and write-ups.">
+<meta property="og:url" content="https://davidrhf.github.io/">
+<meta property="og:image" content="https://davidrhf.github.io/assets/headshot.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<style>
+  .hero { padding: 84px 0 72px; }
+  .hero-grid { display: grid; grid-template-columns: 1.4fr 0.85fr; gap: 60px; align-items: start; }
+  .hero h1 { font-size: clamp(2.4rem, 5.6vw, 3.6rem); font-weight: 600; letter-spacing: -0.03em; }
+  .hero h1 .accent { color: var(--accent); }
+  .status {
+    display: inline-flex; align-items: center; gap: 9px; margin-bottom: 22px;
+    font-family: "JetBrains Mono", monospace; font-size: 0.74rem;
+    letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500;
+    background: var(--accent-soft); color: var(--accent);
+    border-radius: 999px; padding: 6px 15px;
+  }
+  .status .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+
+  .portrait-frame {
+    aspect-ratio: 4 / 5; width: 100%;
+    border-radius: var(--radius); overflow: hidden;
+    border: 1px solid var(--line);
+    background: repeating-linear-gradient(45deg, #eef2f5 0 10px, #e7ecf0 10px 20px);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .portrait-frame img { width: 100%; height: 100%; object-fit: cover; }
+  .portrait-hint {
+    text-align: center; padding: 24px; color: var(--muted);
+    font-family: "JetBrains Mono", monospace; font-size: 0.75rem; line-height: 1.8;
+  }
+  .portrait-hint strong { display: block; color: var(--ink-2); font-size: 0.88rem; margin-bottom: 8px; }
+  .facts {
+    margin-top: 16px; border: 1px solid var(--line); border-radius: var(--radius);
+    background: var(--surface); padding: 16px 18px;
+    font-family: "JetBrains Mono", monospace; font-size: 0.76rem; color: var(--ink-2);
+  }
+  .facts div { display: flex; justify-content: space-between; gap: 12px; padding: 4px 0; }
+  .facts span:first-child { color: var(--muted); }
+
+  .stack-strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 22px 0; }
+  .stack-strip .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 26px; }
+  .stack-strip .label {
+    font-family: "JetBrains Mono", monospace; font-size: 0.7rem;
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted);
+  }
+  .stack-strip .item { font-family: "JetBrains Mono", monospace; font-size: 0.82rem; color: var(--ink-2); }
+
+  .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--gap); }
+  .skillbox { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
+  .skillbox .tags { margin-bottom: 0; }
+  .skillbox h3 {
+    font-family: "JetBrains Mono", monospace; font-size: 0.72rem;
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px;
+  }
+
+  @media (max-width: 900px) {
+    .hero { padding: 52px 0 44px; }
+    .hero-grid { grid-template-columns: 1fr; gap: 36px; }
+    .portrait { max-width: 320px; }
+    .skills-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "David Hazall-Farrell",
+  "url": "https://davidrhf.github.io/",
+  "email": "mailto:hazalldr22@bonaventure.edu",
+  "telephone": "+1-203-745-5869",
+  "image": "https://davidrhf.github.io/assets/headshot.jpg",
+  "jobTitle": "Cybersecurity Analyst",
+  "address": { "@type": "PostalAddress", "addressLocality": "North Haven", "addressRegion": "CT", "addressCountry": "US" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "St. Bonaventure University" },
+    { "@type": "CollegeOrUniversity", "name": "Trinity College, University of Oxford" }
+  ],
+  "knowsLanguage": ["English", "Spanish"],
+  "knowsAbout": ["Penetration Testing","Red Team Operations","Wazuh SIEM","Log Analysis","Network Traffic Analysis","Linux Administration","Python","Bash","C#","SQL","AWS","Cloud Security"],
+  "sameAs": ["https://github.com/DavidRHF"]
+}
+</script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="mark"></span>David Hazall-Farrell</a>
+    <div class="nav-links">
+      <a class="active" href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="labs.html">Labs</a>
+      <a href="AboutMe.html">About</a>
+      <a class="nav-cta hide-sm" href="David-Hazall-Farrell-Resume.pdf">Résumé</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="status"><span class="dot"></span>Open to cybersecurity &amp; IT roles</p>
+        <h1>I break systems on purpose, then help <span class="accent">close the gaps</span>.</h1>
+        <p class="lede">
+          Computer Science B.S. from St. Bonaventure University and an incoming Cybersecurity M.S.
+          student. I've run authorized penetration tests with hardware implants, deployed Wazuh for
+          host-based intrusion detection, monitored TCP and UDP traffic for real attack signal, and
+          built a university security lab from bare hardware upward.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-solid" href="projects.html">See my work</a>
+          <a class="btn btn-ghost" href="mailto:hazalldr22@bonaventure.edu">Email me</a>
+          <a class="btn btn-ghost" href="https://github.com/DavidRHF">GitHub</a>
+        </div>
+      </div>
+
+      <div class="portrait">
+        <!-- HEADSHOT — save your photo as assets/headshot.jpg (portrait crop, ~800x1000px).
+             The striped placeholder shows until that file exists. -->
+        <div class="portrait-frame">
+          <img src="assets/headshot.jpg" alt="Portrait of David Hazall-Farrell"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+          <div class="portrait-hint" style="display:none">
+            <strong>Headshot goes here</strong>
+            save as assets/headshot.jpg<br>portrait crop &middot; ~800&times;1000px
+          </div>
+        </div>
+        <div class="facts">
+          <div><span>based in</span><span>North Haven, CT</span></div>
+          <div><span>relocation</span><span>open</span></div>
+          <div><span>degree</span><span>B.S. CS, 2026</span></div>
+          <div><span>next</span><span>M.S. Cybersecurity</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="stack-strip">
+  <div class="wrap">
+    <span class="label">Stack</span>
+    <span class="item">Python</span><span class="item">Bash</span><span class="item">C#</span>
+    <span class="item">SQL</span><span class="item">Wazuh</span><span class="item">DuckyScript</span>
+    <span class="item">Linux</span><span class="item">Apache2</span><span class="item">IIS</span>
+    <span class="item">AWS</span><span class="item">JSON / XML</span>
+  </div>
+</div>
+
+<main>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Focus areas</p>
+    <h2 class="section-title">Offense, defense, and the infrastructure under both</h2>
+    <p class="section-note">Most of my hands-on work falls into one of these three.</p>
+
+    <div class="grid grid-3">
+      <article class="card">
+        <span class="card-kicker">Offense</span>
+        <h3>Red team &amp; penetration testing</h3>
+        <p>Authorized physical and network penetration testing with a Hak5 Bash Bunny Mark II. Payload
+          development in DuckyScript and Bash, reconnaissance, privilege escalation, and written findings
+          reports that map each issue to a fix.</p>
+        <div class="card-foot"><a class="card-link" href="projects.html">Related work</a></div>
+      </article>
+
+      <article class="card">
+        <span class="card-kicker">Defense</span>
+        <h3>Security monitoring &amp; SOC work</h3>
+        <p>Deploying and tuning Wazuh for host-based intrusion detection, parsing log data in JSON and XML,
+          correlating alerts, and monitoring TCP and UDP traffic to separate genuine attacks from noise.</p>
+        <div class="card-foot"><a class="card-link" href="projects.html">Related work</a></div>
+      </article>
+
+      <article class="card">
+        <span class="card-kicker">Infrastructure</span>
+        <h3>Systems, servers &amp; cloud</h3>
+        <p>Linux and Windows server administration, Apache2 and IIS web hosting, SQL database
+          administration, and AWS fundamentals — including a university cybersecurity lab built from
+          hardware installation through provisioning.</p>
+        <div class="card-foot"><a class="card-link" href="labs.html">Related labs</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <p class="eyebrow">Experience</p>
+    <h2 class="section-title">Where I've done the work</h2>
+
+    <div class="row">
+      <div class="row-when">Jan 2026 — May 2026</div>
+      <div>
+        <h3>Red Team Security Intern</h3>
+        <span class="org">St. Bonaventure University</span>
+        <ul>
+          <li>Conducted authorized penetration testing against university lab systems using a Hak5 Bash Bunny Mark II, developing keystroke-injection payloads in DuckyScript and Bash.</li>
+          <li>Monitored system and network logs to trace attack paths, validate detection coverage, and document indicators of compromise.</li>
+          <li>Reported findings and remediation recommendations to faculty supervisors.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="row-when">Sep 2025 — Dec 2025</div>
+      <div>
+        <h3>Systems &amp; Security Engineering Intern</h3>
+        <span class="org">St. Bonaventure University</span>
+        <ul>
+          <li>Reconfigured university systems using JSON and XML configuration files and deployed Wazuh agents for centralized log collection.</li>
+          <li>Built out the university cybersecurity lab from hardware installation through network configuration and software provisioning.</li>
+          <li>Documented setup procedures so the environment could be reproduced.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="row-when">Jun 2025 — Sep 2025</div>
+      <div>
+        <h3>Ship Dock Associate / IT Support</h3>
+        <span class="org">Amazon</span>
+        <ul>
+          <li>Troubleshot handheld scanners, workstation hardware, and network connectivity to minimize downtime during high-volume shifts.</li>
+          <li>Loaded and staged outbound freight in a deadline-driven, safety-regulated environment.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="row-when">Oct 2024 — Present</div>
+      <div>
+        <h3>Sales Associate</h3>
+        <span class="org">Hobby Lobby</span>
+        <ul>
+          <li>Supported customers at the register and on the floor while carrying a full academic course load.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Technical skills</p>
+    <h2 class="section-title">Tools I actually use</h2>
+    <p class="section-note">Grouped the way a hiring team reads them.</p>
+
+    <div class="skills-grid">
+      <div class="skillbox">
+        <h3>Security</h3>
+        <div class="tags">
+          <span class="tag">Penetration Testing</span><span class="tag">Red Teaming</span>
+          <span class="tag">Wazuh SIEM</span><span class="tag">Log Analysis</span>
+          <span class="tag">Threat Detection</span><span class="tag">Incident Response</span>
+          <span class="tag">Vulnerability Assessment</span><span class="tag">Hak5 Bash Bunny</span>
+          <span class="tag">DuckyScript</span><span class="tag">Network Monitoring</span>
+        </div>
+      </div>
+      <div class="skillbox">
+        <h3>Languages &amp; scripting</h3>
+        <div class="tags">
+          <span class="tag">Python</span><span class="tag">Bash</span><span class="tag">C#</span>
+          <span class="tag">SQL</span><span class="tag">PowerShell</span><span class="tag">HTML</span>
+          <span class="tag">JSON</span><span class="tag">XML</span>
+        </div>
+      </div>
+      <div class="skillbox">
+        <h3>Systems &amp; networking</h3>
+        <div class="tags">
+          <span class="tag">Linux</span><span class="tag">Ubuntu</span><span class="tag">Windows Server</span>
+          <span class="tag">Apache2</span><span class="tag">IIS Manager</span><span class="tag">TCP/IP</span>
+          <span class="tag">UDP</span><span class="tag">DNS</span><span class="tag">Packet Analysis</span>
+        </div>
+      </div>
+      <div class="skillbox">
+        <h3>Cloud &amp; data</h3>
+        <div class="tags">
+          <span class="tag">AWS</span><span class="tag">Cloud Security</span>
+          <span class="tag">Database Administration</span><span class="tag">Query Optimization</span>
+          <span class="tag">Virtualization</span><span class="tag">Git / GitHub</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="band">
+      <p class="eyebrow">Contact</p>
+      <h2 class="section-title">Let's talk</h2>
+      <p>I'm looking for cybersecurity, SOC, and IT roles — full-time or internship — and I'm open to
+        relocation. Email is the fastest way to reach me.</p>
+      <div class="band-links">
+        <a href="mailto:hazalldr22@bonaventure.edu">hazalldr22@bonaventure.edu</a>
+        <a href="tel:+12037455869">(203) 745-5869</a>
+        <a href="https://github.com/DavidRHF">github.com/DavidRHF</a>
+        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-HANDLE">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 David Hazall-Farrell</span>
+    <span>
+      <a href="projects.html">Projects</a> &middot;
+      <a href="labs.html">Labs</a> &middot;
+      <a href="AboutMe.html">About</a> &middot;
+      <a href="David-Hazall-Farrell-Resume.pdf">Résumé</a>
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>
