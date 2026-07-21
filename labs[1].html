@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Labs &amp; Coursework — David Hazall-Farrell | Computer Science &amp; Cybersecurity</title>
+<meta name="description" content="Lab exercises and coursework from David Hazall-Farrell's Computer Science degree at St. Bonaventure University: penetration testing, operating systems, networking, databases, and programming.">
+<link rel="canonical" href="https://davidrhf.github.io/labs.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .group-head {
+    display: flex; align-items: baseline; gap: 16px;
+    margin: 0 0 22px; padding-bottom: 12px; border-bottom: 1px solid var(--line);
+  }
+  .group-head h2 { font-size: 1.28rem; }
+  .group-head .count {
+    font-family: "JetBrains Mono", monospace; font-size: 0.74rem; color: var(--muted);
+  }
+  .lab-card { padding: 22px 24px; }
+  .lab-card .code {
+    font-family: "JetBrains Mono", monospace; font-size: 0.78rem;
+    color: var(--accent); font-weight: 500; display: block; margin-bottom: 8px;
+  }
+  .lab-card h3 { font-size: 1rem; margin-bottom: 8px; }
+  .lab-card p { font-size: 0.9rem; margin-bottom: 14px; }
+  .skills-line {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 24px 26px; margin-top: 34px;
+  }
+  .skills-line .tags { margin-bottom: 0; }
+  .skills-line h3 {
+    font-family: "JetBrains Mono", monospace; font-size: 0.72rem;
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px;
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="mark"></span>David Hazall-Farrell</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a class="active" href="labs.html">Labs</a>
+      <a href="AboutMe.html">About</a>
+      <a class="nav-cta hide-sm" href="David-Hazall-Farrell-Resume.pdf">Résumé</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Labs &amp; coursework</p>
+    <h1>Four years of getting my hands dirty</h1>
+    <p class="lede">Every course in the Computer Science program at St. Bonaventure, with the lab work
+      and assignments kept in version control. Each card links straight to the source in the repository.</p>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================================================
+     DAVID: swap the <h3> in each card below for the real course
+     title (e.g. "Data Structures & Algorithms") and tighten the
+     one-line description. The links already point to the correct
+     folders in your repo. Delete this comment when done.
+     ============================================================ -->
+
+<section>
+  <div class="wrap">
+    <div class="group-head">
+      <h2>Security &amp; systems</h2>
+      <span class="count">02 areas</span>
+    </div>
+
+    <div class="grid grid-2">
+      <article class="card lab-card">
+        <span class="code">PentestingInternship</span>
+        <h3>Red team internship — penetration testing</h3>
+        <p>Payloads, notes, and testing records from the Spring 2026 red team internship: DuckyScript
+          keystroke-injection development for the Hak5 Bash Bunny Mark II, Bash tooling, and the log
+          review that ran alongside it.</p>
+        <div class="tags">
+          <span class="tag">DuckyScript</span><span class="tag">Bash</span>
+          <span class="tag">Penetration testing</span><span class="tag">Log analysis</span>
+        </div>
+        <div class="card-foot"><a class="card-link" href="https://github.com/DavidRHF/DavidRHF.github.io/tree/main/PentestingInternship">Browse files</a></div>
+      </article>
+
+      <article class="card lab-card">
+        <span class="code">OperatingSystems</span>
+        <h3>Operating systems</h3>
+        <p>Processes, scheduling, memory management, concurrency, and file systems — the layer where
+          most real security problems actually live. Lab exercises and assignments.</p>
+        <div class="tags">
+          <span class="tag">Linux</span><span class="tag">Processes</span>
+          <span class="tag">Concurrency</span><span class="tag">Memory management</span>
+        </div>
+        <div class="card-foot"><a class="card-link" href="https://github.com/DavidRHF/DavidRHF.github.io/tree/main/OperatingSystems">Browse files</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="group-head">
+      <h2>Computer science coursework</h2>
+      <span class="count">06 collections</span>
+    </div>
+
+    <div class="grid grid-3">
+      <article class="card lab-card">
+        <span class="code">CS-101</span>
+        <h3>Introduction to Computer Science</h3>
+        <p>Foundations: programming basics, problem decomposition, and the first assignments in the major.</p>
+        <div class="card-foot"><a class="card-link" href="https://github.com/DavidRHF/DavidRHF.github.io/tree/main/CS-101">Browse files</a></div>
+      </article>
+
+      <article class="card lab-card">
+        <span class="code">CS-131</span>
+        <h3>Programming I</h3>
+        <p>Coursework and lab exercises — control flow, functions, and structured program design.</p>
+        <div class="card-foot"><a class="card-link" href="https://github.com/DavidRHF/DavidRHF.github.io/tree/main/CS-131">Browse files</a></div>
+      </article>
+
+      <article class="card lab-card">
+        <span class="code">CS-132</span>
+        <h3>Programming II</h3>
+        <p>Continued programming coursework — objects, data structures, and larger assignments.</p>
+        <div class="card-foot"><a class="card-link" href="https://github.com/DavidRHF/DavidRHF.github.io/tree/main/CS-132">Browse files</a></div>
+      </article>
+
+      <article class="card lab-card">
+        <span class="code">CS-241</span>
+        <h3>Upper-division coursework</h3>
+        <p>Lab exercises and assignments from the 200-level core sequence.</p>
+        <div class="card-foot"><a class="card-link" href="https://github.com/DavidRHF/DavidRHF.github.io/tree/main/CS-241">Browse files</a></div>
+      </article>
+
+      <article class="card lab-card">
+        <span class="code">CS-243</span>
+        <h3>Upper-division coursework</h3>
+        <p>Lab exercises and assignments from the 200-level core sequence.</p>
+        <div class="card-foot"><a class="card-link" href="https://github.com/DavidRHF/DavidRHF.github.io/tree/main/CS-243">Browse files</a></div>
+      </article>
+
+      <article class="card lab-card">
+        <span class="code">College Courses</span>
+        <h3>General coursework archive</h3>
+        <p>Assorted work from across the degree that doesn't sit under a single course code.</p>
+        <div class="card-foot"><a class="card-link" href="https://github.com/DavidRHF/DavidRHF.github.io/tree/main/College%20Courses">Browse files</a></div>
+      </article>
+    </div>
+
+    <div class="skills-line">
+      <h3>What this coursework covered</h3>
+      <div class="tags">
+        <span class="tag">SQL database administration</span>
+        <span class="tag">Linux web hosting</span>
+        <span class="tag">Apache2</span>
+        <span class="tag">TCP monitoring</span>
+        <span class="tag">UDP monitoring</span>
+        <span class="tag">Computer hardware</span>
+        <span class="tag">Computer architecture</span>
+        <span class="tag">Python</span>
+        <span class="tag">C#</span>
+        <span class="tag">HTML</span>
+        <span class="tag">Networking</span>
+        <span class="tag">Operating systems</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="band">
+      <p class="eyebrow">Contact</p>
+      <h2 class="section-title">Questions about any of it?</h2>
+      <p>If you'd like to see a specific assignment or talk through how I approached something, get in touch.</p>
+      <div class="band-links">
+        <a href="mailto:hazalldr22@bonaventure.edu">hazalldr22@bonaventure.edu</a>
+        <a href="https://github.com/DavidRHF">github.com/DavidRHF</a>
+        <a href="projects.html">See projects</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 David Hazall-Farrell</span>
+    <span>
+      <a href="index.html">Home</a> &middot;
+      <a href="projects.html">Projects</a> &middot;
+      <a href="AboutMe.html">About</a> &middot;
+      <a href="David-Hazall-Farrell-Resume.pdf">Résumé</a>
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>
