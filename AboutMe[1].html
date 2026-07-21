@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — David Hazall-Farrell | Cybersecurity &amp; Computer Science</title>
+<meta name="description" content="About David Hazall-Farrell: Computer Science B.S. graduate from St. Bonaventure University, incoming Cybersecurity M.S. student, with internship experience in red team penetration testing and security operations.">
+<link rel="canonical" href="https://davidrhf.github.io/AboutMe.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .about-grid { display: grid; grid-template-columns: 1fr 320px; gap: 56px; align-items: start; }
+  .prose p { color: var(--ink-2); font-size: 1.03rem; margin: 0 0 20px; max-width: 62ch; }
+  .prose p.first { font-size: 1.16rem; color: var(--ink); }
+  .portrait-frame {
+    aspect-ratio: 4 / 5; width: 100%;
+    border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line);
+    background: repeating-linear-gradient(45deg, #eef2f5 0 10px, #e7ecf0 10px 20px);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .portrait-frame img { width: 100%; height: 100%; object-fit: cover; }
+  .portrait-hint {
+    text-align: center; padding: 24px; color: var(--muted);
+    font-family: "JetBrains Mono", monospace; font-size: 0.75rem; line-height: 1.8;
+  }
+  .portrait-hint strong { display: block; color: var(--ink-2); font-size: 0.88rem; margin-bottom: 8px; }
+  .facts {
+    margin-top: 16px; border: 1px solid var(--line); border-radius: var(--radius);
+    background: var(--surface); padding: 16px 18px;
+    font-family: "JetBrains Mono", monospace; font-size: 0.76rem; color: var(--ink-2);
+  }
+  .facts div { display: flex; justify-content: space-between; gap: 12px; padding: 4px 0; }
+  .facts span:first-child { color: var(--muted); }
+  @media (max-width: 860px) {
+    .about-grid { grid-template-columns: 1fr; gap: 34px; }
+    .about-side { max-width: 300px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="mark"></span>David Hazall-Farrell</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="labs.html">Labs</a>
+      <a class="active" href="AboutMe.html">About</a>
+      <a class="nav-cta hide-sm" href="David-Hazall-Farrell-Resume.pdf">Résumé</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">About</p>
+    <h1>Hi, I'm David.</h1>
+  </div>
+</header>
+
+<main>
+
+<section>
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="prose">
+        <p class="first">I finished a Computer Science B.S. at St. Bonaventure University in May 2026 and
+          I'm heading into a Cybersecurity M.S. next. What pulled me toward security was realizing that
+          the interesting failures happen at the seams — between what a system was designed to do and
+          what it will actually let you do.</p>
+
+        <p>My last two semesters were spent on both sides of that. In the fall I was on the systems side:
+          deploying Wazuh agents for host-based intrusion detection, rewriting service configurations in
+          JSON and XML so events came out parseable, and helping build the university's cybersecurity lab
+          from hardware installation through provisioning. In the spring I switched to the red team,
+          running authorized penetration tests with a Hak5 Bash Bunny Mark II and writing
+          keystroke-injection payloads in DuckyScript and Bash.</p>
+
+        <p>Doing both in the same year changed how I think about the work. When you've spent a semester
+          tuning a ruleset, you notice how much of your own attack never generated an alert. That gap is
+          the part I want to keep working on.</p>
+
+        <p>Before that, four years of coursework in operating systems, databases, networking, and
+          computer architecture, plus a summer at Trinity College, Oxford. I've also worked a dock at
+          Amazon and a register at Hobby Lobby through school — less glamorous, but they taught me how to
+          troubleshoot under time pressure with someone waiting on me.</p>
+
+        <p>I'm currently looking for cybersecurity, SOC, and IT roles, and I'm open to relocation. If
+          you're hiring, or you just want to talk shop about physical access attacks or log tuning,
+          <a href="mailto:hazalldr22@bonaventure.edu">send me an email</a>.</p>
+      </div>
+
+      <aside class="about-side">
+        <!-- HEADSHOT — same file as the home page: assets/headshot.jpg -->
+        <div class="portrait-frame">
+          <img src="assets/headshot.jpg" alt="Portrait of David Hazall-Farrell"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+          <div class="portrait-hint" style="display:none">
+            <strong>Headshot goes here</strong>
+            save as assets/headshot.jpg<br>portrait crop &middot; ~800&times;1000px
+          </div>
+        </div>
+        <div class="facts">
+          <div><span>based in</span><span>North Haven, CT</span></div>
+          <div><span>relocation</span><span>open</span></div>
+          <div><span>languages</span><span>EN &middot; ES (basic)</span></div>
+          <div><span>email</span><span>see below</span></div>
+        </div>
+        <div class="cta-row" style="margin-top:18px;">
+          <a class="btn btn-solid" href="David-Hazall-Farrell-Resume.pdf">Download résumé</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <p class="eyebrow">Education</p>
+    <h2 class="section-title">Where I studied</h2>
+
+    <div class="row">
+      <div class="row-when">Sep 2022 — May 2026</div>
+      <div>
+        <h3>B.S., Computer Science</h3>
+        <span class="org">St. Bonaventure University &middot; St. Bonaventure, NY</span>
+        <ul>
+          <li>Coursework in operating systems, databases, computer networks, and computer architecture.</li>
+          <li>SQL database administration; Linux web hosting with Apache2; TCP and UDP traffic monitoring.</li>
+          <li>Two security internships with the university, fall and spring of senior year.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="row-when">Jun 2024 — Aug 2024</div>
+      <div>
+        <h3>Summer Study Abroad</h3>
+        <span class="org">Trinity College, University of Oxford &middot; Oxford, England</span>
+        <ul>
+          <li>Completed a summer academic program in an international cohort.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="row-when">Next</div>
+      <div>
+        <h3>M.S., Cybersecurity</h3>
+        <span class="org">Incoming</span>
+        <ul>
+          <li>Continuing into graduate work with a focus on offensive security and detection engineering.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <p class="eyebrow">Also true</p>
+    <h2 class="section-title">A few other things</h2>
+    <div class="grid grid-3">
+      <article class="card">
+        <span class="card-kicker">Achievement</span>
+        <h3>Future Problem Solvers</h3>
+        <p>First place at the state competition — structured problem-solving under a clock, which turned
+          out to be decent preparation for incident response.</p>
+      </article>
+      <article class="card">
+        <span class="card-kicker">Certification</span>
+        <h3>CT Bartending School</h3>
+        <p>Graduate. Not relevant to security, but it's where I learned to keep six things straight at
+          once while someone's talking to me.</p>
+      </article>
+      <article class="card">
+        <span class="card-kicker">Languages</span>
+        <h3>English &amp; Spanish</h3>
+        <p>Native English speaker, basic conversational Spanish, and an ongoing effort to get past
+          "basic."</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="band">
+      <p class="eyebrow">Contact</p>
+      <h2 class="section-title">Get in touch</h2>
+      <p>Open to cybersecurity, SOC, and IT roles — full-time or internship — and open to relocation.</p>
+      <div class="band-links">
+        <a href="mailto:hazalldr22@bonaventure.edu">hazalldr22@bonaventure.edu</a>
+        <a href="tel:+12037455869">(203) 745-5869</a>
+        <a href="https://github.com/DavidRHF">github.com/DavidRHF</a>
+        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-HANDLE">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 David Hazall-Farrell</span>
+    <span>
+      <a href="index.html">Home</a> &middot;
+      <a href="projects.html">Projects</a> &middot;
+      <a href="labs.html">Labs</a> &middot;
+      <a href="David-Hazall-Farrell-Resume.pdf">Résumé</a>
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>
