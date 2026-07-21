@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — David Hazall-Farrell | Penetration Testing, Wazuh SIEM, Linux</title>
+<meta name="description" content="Cybersecurity and computer science projects by David Hazall-Farrell: Bash Bunny payload development, Wazuh SIEM deployment, cybersecurity lab buildout, Linux web hosting with Apache2, and SQL database administration.">
+<link rel="canonical" href="https://davidrhf.github.io/projects.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .feature {
+    display: grid; grid-template-columns: 1.25fr 1fr; gap: 40px;
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: var(--radius); padding: 34px; margin-bottom: 22px; align-items: start;
+  }
+  .feature h3 { font-size: 1.5rem; margin-bottom: 12px; }
+  .feature p { color: var(--ink-2); font-size: 1rem; }
+  .feature ul { margin: 0; padding-left: 20px; color: var(--ink-2); font-size: 0.94rem; }
+  .feature li { margin-bottom: 8px; }
+  .feature-side {
+    border-left: 1px solid var(--line); padding-left: 32px;
+  }
+  .feature-side h4 {
+    font-family: "JetBrains Mono", monospace; font-size: 0.7rem;
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px;
+  }
+  .placeholder-note {
+    background: var(--accent-soft); border: 1px dashed var(--accent);
+    border-radius: var(--radius); padding: 16px 20px; margin-bottom: 30px;
+    font-family: "JetBrains Mono", monospace; font-size: 0.78rem; color: var(--accent-deep);
+  }
+  @media (max-width: 820px) {
+    .feature { grid-template-columns: 1fr; gap: 24px; padding: 26px; }
+    .feature-side { border-left: none; border-top: 1px solid var(--line); padding-left: 0; padding-top: 22px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="mark"></span>David Hazall-Farrell</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a class="active" href="projects.html">Projects</a>
+      <a href="labs.html">Labs</a>
+      <a href="AboutMe.html">About</a>
+      <a class="nav-cta hide-sm" href="David-Hazall-Farrell-Resume.pdf">Résumé</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Projects</p>
+    <h1>Things I built, broke, and documented</h1>
+    <p class="lede">Work from two security internships at St. Bonaventure University, plus systems and
+      database projects from coursework. Each one lists what I actually did and what I'd do differently.</p>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="wrap">
+
+    <!-- ============================================================
+         DAVID: replace the bracketed bits below with real specifics —
+         numbers, repo links, and screenshots. Delete this comment after.
+         ============================================================ -->
+
+    <article class="feature">
+      <div>
+        <span class="card-kicker">Red team internship &middot; Spring 2026</span>
+        <h3>Bash Bunny payload development &amp; physical access testing</h3>
+        <p>A semester of authorized penetration testing against university lab systems using a Hak5 Bash
+          Bunny Mark II — a USB device that presents itself as a trusted keyboard and types a payload the
+          instant it's plugged in.</p>
+        <ul>
+          <li>Wrote keystroke-injection payloads in DuckyScript, with Bash helpers for staging and cleanup.</li>
+          <li>Tested how quickly a payload could reach execution on both locked and unlocked hosts.</li>
+          <li>Watched the defensive side in parallel — reading system and network logs to see which actions produced alerts and which passed silently.</li>
+          <li>Wrote up findings with remediation steps: USB port policy, screen-lock enforcement, and endpoint logging gaps.</li>
+        </ul>
+      </div>
+      <div class="feature-side">
+        <h4>Stack</h4>
+        <div class="tags">
+          <span class="tag">DuckyScript</span><span class="tag">Bash</span>
+          <span class="tag">Hak5 Bash Bunny Mk II</span><span class="tag">Windows</span>
+          <span class="tag">Linux</span><span class="tag">Log analysis</span>
+        </div>
+        <h4>Takeaway</h4>
+        <p style="font-size:0.9rem;">The interesting part wasn't getting the payload to run — it was seeing
+          how much of it never showed up in the logs at all.</p>
+        <a class="card-link" href="https://github.com/DavidRHF/DavidRHF.github.io/tree/main/PentestingInternship">View repository</a>
+      </div>
+    </article>
+
+    <div class="grid grid-2">
+
+      <article class="card">
+        <span class="card-kicker">Systems internship &middot; Fall 2025</span>
+        <h3>Wazuh SIEM deployment &amp; log pipeline</h3>
+        <p>Deployed Wazuh agents across university systems for host-based intrusion detection and
+          centralized log collection, then reconfigured services through JSON and XML config files so
+          events landed in a consistent, parseable shape. Tuning mattered more than installing —
+          an untuned ruleset buries the alerts you care about.</p>
+        <div class="tags">
+          <span class="tag">Wazuh</span><span class="tag">HIDS</span><span class="tag">JSON</span>
+          <span class="tag">XML</span><span class="tag">Linux</span><span class="tag">Alert tuning</span>
+        </div>
+        <div class="card-foot"><a class="card-link" href="https://github.com/DavidRHF">Repository</a></div>
+      </article>
+
+      <article class="card">
+        <span class="card-kicker">Systems internship &middot; Fall 2025</span>
+        <h3>Cybersecurity lab buildout</h3>
+        <p>Helped stand up the university's cybersecurity lab end to end — racking and cabling hardware,
+          configuring the network, provisioning operating systems and tooling, and writing the setup
+          documentation so the next group of students could rebuild it from scratch.</p>
+        <div class="tags">
+          <span class="tag">Hardware</span><span class="tag">Networking</span>
+          <span class="tag">Provisioning</span><span class="tag">Documentation</span>
+        </div>
+        <div class="card-foot"><a class="card-link" href="labs.html">Related coursework</a></div>
+      </article>
+
+      <article class="card">
+        <span class="card-kicker">Coursework</span>
+        <h3>Linux web hosting with Apache2</h3>
+        <p>Built and hosted websites on Linux from the server up: installing and configuring Apache2,
+          managing virtual hosts and permissions, and handling DNS. This site runs on GitHub Pages,
+          but the hosting fundamentals came from doing it the manual way first.</p>
+        <div class="tags">
+          <span class="tag">Linux</span><span class="tag">Apache2</span><span class="tag">HTML</span>
+          <span class="tag">DNS</span><span class="tag">IIS Manager</span>
+        </div>
+        <div class="card-foot"><a class="card-link" href="labs.html">See labs</a></div>
+      </article>
+
+      <article class="card">
+        <span class="card-kicker">Coursework</span>
+        <h3>SQL database administration</h3>
+        <p>Schema design, query writing and optimization, and general database administration —
+          including the security side: least-privilege accounts, and why string-concatenated queries
+          are how injection happens.</p>
+        <div class="tags">
+          <span class="tag">SQL</span><span class="tag">Database administration</span>
+          <span class="tag">Query optimization</span><span class="tag">SQL injection</span>
+        </div>
+        <div class="card-foot"><a class="card-link" href="labs.html">See labs</a></div>
+      </article>
+
+      <article class="card">
+        <span class="card-kicker">Coursework</span>
+        <h3>Network traffic monitoring</h3>
+        <p>Capturing and reading TCP and UDP traffic to understand what normal looks like on a network —
+          which is the only way to recognize what abnormal looks like. Connection states, handshakes,
+          and the difference between a scan and ordinary chatter.</p>
+        <div class="tags">
+          <span class="tag">TCP/IP</span><span class="tag">UDP</span>
+          <span class="tag">Packet analysis</span><span class="tag">Network monitoring</span>
+        </div>
+        <div class="card-foot"><a class="card-link" href="labs.html">See labs</a></div>
+      </article>
+
+      <article class="card">
+        <span class="card-kicker">More</span>
+        <h3>Everything else on GitHub</h3>
+        <p>Coursework repositories, scripts, and smaller builds across four years of the Computer Science
+          program — organized by course on the labs page, or browse the raw repository directly.</p>
+        <div class="tags">
+          <span class="tag">Python</span><span class="tag">C#</span><span class="tag">Bash</span>
+          <span class="tag">HTML</span>
+        </div>
+        <div class="card-foot"><a class="card-link" href="https://github.com/DavidRHF">github.com/DavidRHF</a></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="band">
+      <p class="eyebrow">Contact</p>
+      <h2 class="section-title">Want the details on any of these?</h2>
+      <p>Happy to walk through methodology, findings, or what I'd do differently. Email is fastest.</p>
+      <div class="band-links">
+        <a href="mailto:hazalldr22@bonaventure.edu">hazalldr22@bonaventure.edu</a>
+        <a href="https://github.com/DavidRHF">github.com/DavidRHF</a>
+        <a href="David-Hazall-Farrell-Resume.pdf">Download résumé</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 David Hazall-Farrell</span>
+    <span>
+      <a href="index.html">Home</a> &middot;
+      <a href="labs.html">Labs</a> &middot;
+      <a href="AboutMe.html">About</a> &middot;
+      <a href="David-Hazall-Farrell-Resume.pdf">Résumé</a>
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>
